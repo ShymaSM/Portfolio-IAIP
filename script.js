@@ -147,35 +147,12 @@ document.querySelectorAll('.edu-card').forEach((card, i) => {
 
 /* ── 6. CONTACT FORM ──────────────────────────────── */
 function handleFormSubmit(e) {
-  e.preventDefault();
-
-  const form = document.getElementById('contactForm');
+  // Let the form submit natively to FormSubmit
   const btn = document.getElementById('submitBtn');
   btn.textContent = 'Sending…';
-  btn.disabled = true;
-
-  const formData = new FormData(form);
-
-  fetch("https://formsubmit.co/ajax/shymasm2004@gmail.com", {
-      method: "POST",
-      body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-      if(data.success) {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').style.display = 'block';
-      } else {
-          alert('Something went wrong. Please try again.');
-          btn.textContent = 'Send Message';
-          btn.disabled = false;
-      }
-  })
-  .catch(error => {
-      alert('Error sending message. Please try again later.');
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-  });
+  
+  // We don't use e.preventDefault() here so the browser handles the POST request
+  // and directs the user to FormSubmit's activation/success page.
 }
 
 
