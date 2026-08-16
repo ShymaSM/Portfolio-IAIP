@@ -158,10 +158,14 @@ function handleFormSubmit(e) {
   // Add Web3Forms access key
   formData.append('access_key', '3d42a227-57ff-495f-b1d1-c31426ffed15');
 
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
   fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData,
+      body: json,
       headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
       }
   })
