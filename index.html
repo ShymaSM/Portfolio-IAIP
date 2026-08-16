@@ -761,11 +761,11 @@
             <div class="edu-meta">
               <div class="edu-institution">IET On Campus</div>
               <div class="edu-degree">Active Member & Volunteer</div>
-              <div class="edu-field">Technology & Innovation</div>
+              <div class="edu-field">St. Xavier's Catholic College of Engineering (Autonomous), Nagercoil</div>
             </div>
           </div>
           <div class="edu-footer">
-            <div class="edu-period">2023 – Present</div>
+            <div class="edu-period">July 2023 - May 2024</div>
             <span class="edu-status status-ongoing">Active</span>
           </div>
         </div>
@@ -780,11 +780,11 @@
             <div class="edu-meta">
               <div class="edu-institution">Eco Club</div>
               <div class="edu-degree">Core Volunteer</div>
-              <div class="edu-field">Environmental Awareness</div>
+              <div class="edu-field">St. Xavier's Catholic College of Engineering (Autonomous), Nagercoil </div>
             </div>
           </div>
           <div class="edu-footer">
-            <div class="edu-period">2022 – Present</div>
+            <div class="edu-period">July 2025 - May 2026</div>
             <span class="edu-status status-ongoing">Active</span>
           </div>
         </div>
@@ -867,7 +867,9 @@
         <div class="contact-form-card">
           <div class="form-card-title">Send a Message</div>
           <p class="form-card-sub">I typically respond within 24 hours.</p>
-          <form class="contact-form" id="contactForm" action="mailto:shymasm2004@gmail.com" method="POST" enctype="text/plain">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <div class="form-grid">
               <div class="form-group">
                 <label class="form-label">Name</label>
@@ -896,9 +898,9 @@
             </button>
           </form>
           <div class="form-success" id="formSuccess">
-            <div class="form-success-icon">✅</div>
-            <div class="form-success-title">Message Sent!</div>
-            <p class="form-success-sub">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+            <div class="form-success-icon">✓</div>
+            <div class="form-success-title">Message Sent Successfully!</div>
+            <p class="form-success-sub">Thank you for reaching out. I'll get back to you soon.</p>
           </div>
         </div>
       </div>

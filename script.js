@@ -147,12 +147,51 @@ document.querySelectorAll('.edu-card').forEach((card, i) => {
 
 /* ── 6. CONTACT FORM ──────────────────────────────── */
 function handleFormSubmit(e) {
-  // Let the form submit natively to FormSubmit
+  e.preventDefault();
+
+  const form = document.getElementById('contactForm');
   const btn = document.getElementById('submitBtn');
-  btn.textContent = 'Sending…';
-  
-  // We don't use e.preventDefault() here so the browser handles the POST request
-  // and directs the user to FormSubmit's activation/success page.
+  btn.innerHTML = 'Sending...';
+  btn.disabled = true;
+
+  const formData = new FormData(form);
+
+  fetch("https://formsubmit.co/ajax/shymasm2004@gmail.com", {
+      method: "POST",
+      body: formData,
+      headers: {
+          'Accept': 'application/json'
+      }
+  })
+  .then(response => response.json())
+  .then(data => {
+      if(data.success) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          form.reset();
+      } else {
+          alert('✕ Unable to send message. Please try again.');
+          btn.innerHTML = `
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22,2 15,22 11,13 2,9" />
+            </svg>
+            Send Message
+          `;
+          btn.disabled = false;
+      }
+  })
+  .catch(error => {
+      alert('✕ Unable to send message. Please try again.');
+      btn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13" />
+          <polygon points="22,2 15,22 11,13 2,9" />
+        </svg>
+        Send Message
+      `;
+      btn.disabled = false;
+  });
 }
 
 
