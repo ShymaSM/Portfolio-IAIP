@@ -155,8 +155,10 @@ function handleFormSubmit(e) {
   btn.disabled = true;
 
   const formData = new FormData(form);
+  // Add Web3Forms access key
+  formData.append('access_key', '3d42a227-57ff-495f-b1d1-c31426ffed15');
 
-  fetch("https://formsubmit.co/ajax/shymasm2004@gmail.com", {
+  fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
       headers: {
