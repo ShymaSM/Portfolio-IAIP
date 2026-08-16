@@ -814,23 +814,25 @@
           <div class="form-card-title">Send a Message</div>
           <p class="form-card-sub">I typically respond within 24 hours.</p>
           <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <div class="form-grid">
               <div class="form-group">
                 <label class="form-label">Name</label>
-                <input type="text" class="form-input" placeholder="Your full name" required />
+                <input type="text" name="name" class="form-input" placeholder="Your full name" required />
               </div>
               <div class="form-group">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-input" placeholder="your@email.com" required />
+                <input type="email" name="email" class="form-input" placeholder="your@email.com" required />
               </div>
             </div>
             <div class="form-group">
               <label class="form-label">Subject</label>
-              <input type="text" class="form-input" placeholder="What's this about?" required />
+              <input type="text" name="_subject" class="form-input" placeholder="What's this about?" required />
             </div>
             <div class="form-group">
               <label class="form-label">Message</label>
-              <textarea class="form-textarea" placeholder="Tell me about your project, opportunity, or just say hi..."
+              <textarea name="message" class="form-textarea" placeholder="Tell me about your project, opportunity, or just say hi..."
                 required></textarea>
             </div>
             <button type="submit" class="form-submit" id="submitBtn">

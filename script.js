@@ -149,15 +149,33 @@ document.querySelectorAll('.edu-card').forEach((card, i) => {
 function handleFormSubmit(e) {
   e.preventDefault();
 
+  const form = document.getElementById('contactForm');
   const btn = document.getElementById('submitBtn');
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  /* Simulate async submit (replace with real fetch/EmailJS) */
-  setTimeout(() => {
-    document.getElementById('contactForm').style.display    = 'none';
-    document.getElementById('formSuccess').style.display    = 'block';
-  }, 1200);
+  const formData = new FormData(form);
+
+  fetch("https://formsubmit.co/ajax/shymasm2004@gmail.com", {
+      method: "POST",
+      body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+      if(data.success) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+      } else {
+          alert('Something went wrong. Please try again.');
+          btn.textContent = 'Send Message';
+          btn.disabled = false;
+      }
+  })
+  .catch(error => {
+      alert('Error sending message. Please try again later.');
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+  });
 }
 
 
