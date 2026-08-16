@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyma S M | UI/UX Designer & Frontend Developer</title>
+  <meta name="description"
+    content="Portfolio of Shyma S M, Graphic Design Executive, UI/UX Designer, and Frontend Developer showcasing projects, skills, and creative work." />
+  <meta name="keywords" content="Shyma S M, UI/UX Designer, Frontend Developer, Graphic Design, Portfolio" />
+  <meta name="author" content="Shyma S M" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shyma S M | UI/UX Designer & Frontend Developer" />
+  <meta property="og:description"
+    content="Portfolio of Shyma S M — Graphic Design Executive, UI/UX Designer, and Frontend Developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shymasm.netlify.app" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shyma S M | UI/UX Designer & Frontend Developer" />
+  <meta name="twitter:description" content="Portfolio of Shyma S M — creative designer and frontend developer." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shyma S M",
+    "jobTitle": "Graphic Design Executive, UI/UX Designer, Frontend Developer",
+    "email": "shymasm2004@gmail.com",
+    "telephone": "+91-9629640095",
+    "url": "https://shymasm.netlify.app",
+    "sameAs": [
+      "https://github.com/ShymaSM",
+      "https://www.linkedin.com/in/shyma-s-m"
+    ],
+    "knowsAbout": ["UI/UX Design", "Frontend Development", "Graphic Design", "Figma", "HTML", "CSS", "JavaScript"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ── CURSOR ─────────────────────────────── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── MOBILE MENU ───────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#journey" onclick="closeMobileMenu()">Journey</a>
+    <a href="#expertise" onclick="closeMobileMenu()">Expertise</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="https://github.com/ShymaSM" target="_blank" onclick="closeMobileMenu()" class="mobile-github">GitHub ↗</a>
+  </div>
+
+  <!-- ── NAVBAR ────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-s">S</span><span class="logo-m">M</span>
+      <span class="logo-name">SHYMA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      
+      <!-- Left Column: Text & CTA -->
+      <div class="hero-text-col">
+        <h3 class="hero-greeting">Hello, It's Me</h3>
+        <h1 class="hero-name">
+          <span class="name-highlight" id="heroName">Shyma S M</span>
+        </h1>
+        
+        <h3 class="hero-role-wrapper">
+          And I'm a <span class="hero-role-accent" id="roleText">Graphic Design Executive</span>
+        </h3>
+        
+        <p class="hero-desc">
+          Designing experiences, developing solutions — I craft digital products that are both beautiful and functional, blending creative vision with technical precision.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/shyma-s-m" target="_blank" class="social-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="https://github.com/ShymaSM" target="_blank" class="social-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        </div>
+        
+        <!-- CTA -->
+        <a href="resume.pdf" class="btn-neon-pill" download>
+          Download CV
+        </a>
+      </div>
+
+      <!-- Right Column: Hexagon Image -->
+      <div class="hero-image-col">
+        <div class="hexagon-wrapper">
+          <div class="hexagon-inner">
+            <img src="images/Shyma.png" alt="Shyma" onerror="this.style.display='none'; this.parentNode.innerText='Shyma.png missing';">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 — JOURNEY
+  ═══════════════════════════════════════ -->
+  <section id="journey" class="section-wrap">
+    <p class="section-label reveal">My Journey</p>
+    <h2 class="section-title reveal">The story so far,<br><span class="muted">still writing...</span></h2>
+    <p class="section-sub reveal">From a curious creative to a professional designer-developer — here's how it unfolded.
+    </p>
+
+    <div class="journey-grid">
+      <!-- Timeline -->
+      <div class="timeline">
+
+        <!-- 2021 -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2021 — First Step</div>
+          <div class="timeline-title">Started Exploring Coding</div>
+          <div class="timeline-desc">Started exploring basic programming and coding out of personal interest.
+            Experimented with simple programs and gradually developed curiosity about how software and websites work.
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot violet"></span>
+          <div class="timeline-year">2022 — B.Tech IT</div>
+          <div class="timeline-title">Started B.Tech in Information Technology</div>
+          <div class="timeline-desc">Joined <strong>B.Tech Information Technology</strong> because of my interest in
+            coding and technology. Started building a stronger foundation in programming, computer fundamentals, and
+            problem-solving.</div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot amber"></span>
+          <div class="timeline-year">2023 — Web Development</div>
+          <div class="timeline-title">Started Exploring Web Development</div>
+          <div class="timeline-desc">Began exploring <strong>HTML, CSS, and JavaScript</strong> and learned how websites
+            are structured, styled, and made interactive. Started creating small practice projects while improving
+            frontend skills.</div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2024 — Practical Experience</div>
+          <div class="timeline-title">Developed Web Development Skills</div>
+          <div class="timeline-desc">Focused more deeply on frontend and web development. Worked on projects and gained
+            practical exposure through <strong>internships and real-world development tasks</strong>. Improved skills in
+            responsive design, JavaScript, and modern web development workflows.</div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot violet"></span>
+          <div class="timeline-year">2025 — UI/UX Design</div>
+          <div class="timeline-title">Expanded into UI/UX Design</div>
+          <div class="timeline-desc">Started learning <strong>UI/UX Design</strong> to combine creativity and frontend
+            development. Explored <strong>Figma, wireframing, prototyping, user research, design systems, and visual
+              design</strong>.<br><br>The goal was to understand not only how to build a website, but also how to design
+            a better user experience.</div>
+        </div>
+
+        <!-- 2026 (CURRENT) -->
+        <div class="timeline-item reveal"
+          style="background: rgba(0,217,255,0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,217,255,0.2); margin-top: 2rem; margin-bottom: 2rem; position: relative;">
+          <span class="timeline-dot" style="box-shadow: 0 0 20px var(--cyan); transform: scale(1.2);"></span>
+          <div class="timeline-year">2026 — Bringing Design & Development Together <span class="badge badge-c"
+              style="margin-left: 0.5rem; padding: 0.15rem 0.5rem; font-size: 0.65rem; border-radius: 4px;">CURRENT</span>
+          </div>
+          <div class="timeline-title">Building Projects with UI/UX + Frontend</div>
+          <div class="timeline-desc">
+            Started combining my <strong>UI/UX and Web Development skills</strong> to build complete projects from idea
+            to implementation.<br><br>
+            Currently working on multiple projects involving:
+            <ul style="margin-top: 0.5rem; margin-left: 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+              <li>UI/UX Design</li>
+              <li>Frontend Development</li>
+              <li>Responsive Websites</li>
+              <li>Graphic Design</li>
+              <li>Real-world Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Future -->
+        <div class="timeline-item reveal">
+          <span class="timeline-dot amber"></span>
+          <div class="timeline-year">Future — The Next Chapter</div>
+          <div class="timeline-title">Building More Meaningful Projects</div>
+          <div class="timeline-desc">Continue improving my skills in <strong>UI/UX, Frontend Development, and Creative
+              Technology</strong>, while building more real-world projects and creating useful, user-friendly digital
+            experiences.</div>
+        </div>
+
+      </div>
+
+      <!-- About card -->
+      <div class="reveal">
+        <div class="journey-card glow-card">
+          <div class="journey-quote">
+            "Design is not just what it looks like — <em>design is how it works.</em>"
+          </div>
+          <p class="journey-body">
+            I believe the best digital experiences emerge when creativity meets logic. Every pixel should have purpose.
+            Every interaction should feel effortless. That's the philosophy I bring to every project.
+          </p>
+          <div class="about-grid">
+            <div class="about-cell about-cell-c">
+              <div class="about-cell-label label-c">LOCATION</div>
+              <div class="about-cell-value">India</div>
+            </div>
+            <div class="about-cell about-cell-v">
+              <div class="about-cell-label label-v">CURRENT ROLE</div>
+              <div class="about-cell-value">Web Developer</div>
+            </div>
+          </div>
+          <div class="about-badges">
+            <span class="badge badge-c">Creative Thinker</span>
+            <span class="badge badge-v">Detail-Oriented</span>
+            <span class="badge badge-c">Problem Solver</span>
+            <span class="badge badge-v">Design Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3 — EXPERTISE
+  ═══════════════════════════════════════ -->
+  <div class="expertise-band" id="expertise">
+    <div class="section-wrap" style="padding-top:6rem;padding-bottom:6rem;">
+      <p class="section-label reveal">What I Do</p>
+      <h2 class="section-title reveal">Expertise &<br><span class="muted">Capabilities</span></h2>
+      <p class="section-sub reveal">A multidisciplinary skill set built at the intersection of design, technology, and
+        storytelling.</p>
+
+      <div class="expertise-grid">
+
+        <!-- UI/UX -->
+        <div class="skill-card card-v skill-card-enhanced">
+          <div class="skill-decor skill-decor-1">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"
+                opacity="0.3" />
+              <path d="M20 50L80 50M50 20L50 80" stroke="currentColor" stroke-width="2" opacity="0.3" />
+            </svg>
+          </div>
+          <div class="skill-icon icon-v">🎨</div>
+          <div class="skill-card-title">UI/UX Design</div>
+          <div class="skill-tags skill-tags-large">
+            <span class="skill-tag tag-v">Figma</span>
+            <span class="skill-tag tag-v">Wireframing</span>
+            <span class="skill-tag tag-v">Prototyping</span>
+            <span class="skill-tag tag-v">User Research</span>
+            <span class="skill-tag tag-v">Design Systems</span>
+            <span class="skill-tag tag-v">User Flow</span>
+            <span class="skill-tag tag-v">Information Architecture</span>
+            <span class="skill-tag tag-v">Usability Testing</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card card-c skill-card-enhanced">
+          <div class="skill-decor skill-decor-2">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="60" height="60" rx="4" stroke="currentColor" stroke-width="2" opacity="0.3" />
+              <path d="M30 40L40 50L30 60" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" opacity="0.4" />
+              <path d="M45 60H65" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+            </svg>
+          </div>
+          <div class="skill-icon icon-c">💻</div>
+          <div class="skill-card-title">Frontend Development</div>
+          <div class="skill-tags skill-tags-large">
+            <span class="skill-tag tag-c">HTML</span>
+            <span class="skill-tag tag-c">CSS</span>
+            <span class="skill-tag tag-c">JavaScript</span>
+            <span class="skill-tag tag-c">Responsive Design</span>
+            <span class="skill-tag tag-c">Tailwind CSS</span>
+            <span class="skill-tag tag-c">React</span>
+            <span class="skill-tag tag-c">Git</span>
+            <span class="skill-tag tag-c">API Integration</span>
+          </div>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="skill-card card-a skill-card-enhanced">
+          <div class="skill-decor skill-decor-3">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 20C30 20 20 40 20 60C20 80 40 80 50 80C60 80 80 80 80 60C80 40 70 20 50 20Z"
+                stroke="currentColor" stroke-width="2" opacity="0.3" />
+              <circle cx="35" cy="45" r="4" fill="currentColor" opacity="0.4" />
+              <circle cx="50" cy="35" r="4" fill="currentColor" opacity="0.4" />
+              <circle cx="65" cy="45" r="4" fill="currentColor" opacity="0.4" />
+              <circle cx="50" cy="65" r="4" fill="currentColor" opacity="0.4" />
+            </svg>
+          </div>
+          <div class="skill-icon icon-a">✦</div>
+          <div class="skill-card-title">Graphic Design</div>
+          <div class="skill-tags skill-tags-large">
+            <span class="skill-tag tag-a">Branding</span>
+            <span class="skill-tag tag-a">Social Media Design</span>
+            <span class="skill-tag tag-a">Marketing</span>
+            <span class="skill-tag tag-a">Typography</span>
+            <span class="skill-tag tag-a">Color Theory</span>
+            <span class="skill-tag tag-a">Poster Design</span>
+            <span class="skill-tag tag-a">Creative Design</span>
+            <span class="skill-tag tag-a">Visual Identity</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card card-g skill-card-enhanced">
+          <div class="skill-icon icon-g">🛠</div>
+          <div class="skill-card-title">Tools &amp; Workflow</div>
+          <div class="tools-grid tools-grid-enhanced">
+            <div class="tool-cell tool-c">
+              <div class="tool-icon">🐙</div>
+              <div class="tool-label">GitHub</div>
+            </div>
+            <div class="tool-cell tool-a">
+              <div class="tool-icon">🚀</div>
+              <div class="tool-label">Netlify</div>
+            </div>
+            <div class="tool-cell tool-v">
+              <div class="tool-icon">🎨</div>
+              <div class="tool-label">Canva</div>
+            </div>
+            <div class="tool-cell tool-r">
+              <div class="tool-icon">🅰</div>
+              <div class="tool-label">Adobe Suite</div>
+            </div>
+            <div class="tool-cell tool-c">
+              <div class="tool-icon">📝</div>
+              <div class="tool-label">VS Code</div>
+            </div>
+            <div class="tool-cell tool-p">
+              <div class="tool-icon">◆</div>
+              <div class="tool-label">Figma</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4 — FEATURED PROJECTS
+  ═══════════════════════════════════════ -->
+  <section id="projects" class="section-wrap">
+    <p class="section-label reveal">Featured Work</p>
+    <h2 class="section-title reveal">Projects That<br><span class="muted">Speak for Themselves</span></h2>
+    <p class="section-sub reveal">Selected work spanning design, development, and innovation — built with purpose.</p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 — Marhaba -->
+      <div class="project-card glow-card">
+        <div class="project-img">
+          <div class="project-img-inner proj-marhaba">
+            <img src="images/marhaba-logo-transparent.png" alt="Marhaba Event Management"
+              class="proj-logo-img marhaba-logo-img" />
+            <div class="project-overlay">
+              <span class="proj-badge badge-event">Event Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-number">Project — 01</div>
+          <div class="project-name">Marhaba Event Management</div>
+          <p class="project-desc">A modern event management website designed to streamline event planning,
+            registrations, and customer engagement — combining elegant design with practical functionality.</p>
+          <div class="project-highlights">
+            <span class="hl-tag">Responsive Design</span>
+            <span class="hl-tag">Event Listings</span>
+            <span class="hl-tag">Registration Forms</span>
+            <span class="hl-tag">SEO Optimized</span>
+            <span class="hl-tag">UX-First</span>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill tech-cyan">HTML</span>
+            <span class="tech-pill tech-violet">CSS</span>
+            <span class="tech-pill tech-amber">JavaScript</span>
+            <span class="tech-pill tech-muted">Figma</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/ShymaSM" target="_blank" class="btn-proj btn-proj-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://marhaba.co.in" target="_blank" rel="noopener noreferrer" class="btn-proj btn-proj-outline">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15,3 21,3 21,9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 — Smart Uro -->
+      <div class="project-card glow-card">
+        <div class="project-img">
+          <div class="project-img-inner proj-smarturo">
+            <img src="images/smarturo-logo-transparent.png" alt="Smart URO — Wellness Monitoring"
+              class="proj-logo-img smarturo-logo-img" />
+            <div class="project-overlay">
+              <span class="proj-badge badge-iot">IoT Healthcare</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-number">Project — 02</div>
+          <div class="project-name">Smart Uro — Wellness Monitoring</div>
+          <p class="project-desc">An IoT-based smart toilet system for urine analysis and wellness monitoring, turning
+            everyday health signals into actionable insights for better living.</p>
+          <div class="project-highlights">
+            <span class="hl-tag">IoT Integration</span>
+            <span class="hl-tag">Health Monitoring</span>
+            <span class="hl-tag">Data Tracking</span>
+            <span class="hl-tag">Smart Healthcare</span>
+            <span class="hl-tag">Dashboard UI</span>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill tech-cyan">IoT</span>
+            <span class="tech-pill tech-violet">Figma</span>
+            <span class="tech-pill tech-amber">Data Viz</span>
+            <span class="tech-pill tech-muted">UI Design</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/ShymaSM" target="_blank" class="btn-proj btn-proj-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Resume download CTA -->
+    <div class="resume-cta glow-card reveal">
+      <div>
+        <div class="resume-cta-label">RESUME</div>
+        <h3 class="resume-cta-title">Want the full picture?</h3>
+        <p class="resume-cta-sub">Download my resume to see my complete experience, education, and skill set.</p>
+      </div>
+      <a href="resume.pdf" class="btn-primary" download style="flex-shrink:0;white-space:nowrap;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7,10 12,15 17,10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4.5 — EXPERIENCE
+  ═══════════════════════════════════════ -->
+  <div class="exp-band" id="experience">
+    <div class="section-wrap" style="padding-top:6rem;padding-bottom:6rem;">
+      <p class="section-label reveal">Professional Journey</p>
+      <h2 class="section-title reveal">Work Experience &<br><span class="muted">Internships</span></h2>
+      <p class="section-sub reveal">Hands-on experience building, designing, and collaborating in real-world
+        environments.</p>
+
+      <div class="exp-grid">
+
+        <!-- Web Development Intern -->
+        <div class="exp-card exc-1 reveal">
+          <div class="exp-header">
+            <div class="exp-logo exp-logo-1">
+              <img src="images/Intern Alpha Logo.png" alt="Intern Alpha Logo"
+                style="width:100%; height:100%; object-fit:contain;"
+                onerror="this.style.display='none'; this.parentNode.innerText='IA';">
+            </div>
+            <div class="exp-meta">
+              <div class="exp-institution">INTERN ALPHA</div>
+              <div class="exp-degree">Web Development Intern</div>
+              <div class="exp-field">Remote</div>
+            </div>
+          </div>
+          <div class="exp-desc">
+            User Experience (UX), UI and +5 skills.
+          </div>
+          <div class="exp-desc">
+            Started exploring web development by learning HTML, CSS, and JavaScript, while building responsive websites
+            and gaining practical experience through projects and internships.
+            <br><br>
+          </div>
+          <div class="exp-footer">
+            <div class="exp-period"><b>Aug 2026 – Present </b> </div>
+            <span class="exp-status status-active">Present</span>
+          </div>
+        </div>
+
+        <!-- The Social Magnet -->
+        <div class="exp-card exc-2 reveal">
+          <div class="exp-header">
+            <div class="exp-logo exp-logo-2">
+              <img src="images/Social Magnet Logo.png" alt="Social Magnet Logo"
+                style="width:100%; height:100%; object-fit:contain;"
+                onerror="this.style.display='none'; this.parentNode.innerText='SM';">
+            </div>
+            <div class="exp-meta">
+              <div class="exp-institution">The Social Magnet</div>
+              <div class="exp-degree">Graphic Designer</div>
+              <div class="exp-field">Vellore, Tamil Nadu, India · Remote</div>
+            </div>
+          </div>
+          <div class="exp-desc">
+            Completed an internship as a Graphic Design Intern at Social Magent, where I gained hands on experience in
+            creating visually engaging designs for social media and digital platforms. I contributed to branding...
+            <br><br>
+            <strong><b>Graphic Designer</b></strong> (Jan 2026 - Jul 2026 · 7 mos)<br>
+            <strong><b>Graphic Designer</b></strong> (Aug 2025 - Jun 2026 · 11 mos)
+          </div>
+          <div class="exp-actions" style="margin-top: 1.2rem;">
+            <a href="images/TSM.PNG" target="_blank" class="btn-proj btn-proj-outline"
+              style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Certificate
+            </a>
+          </div>
+          <div class="exp-footer">
+            <div class="exp-period">Aug 2025 – Jul 2026 (1 yr)</div>
+            <span class="exp-status status-completed">Completed</span>
+          </div>
+        </div>
+
+        <!-- UI/UX Developer Internship -->
+        <div class="exp-card exc-1 reveal">
+          <div class="exp-header">
+            <div class="exp-logo exp-logo-1">
+              <img src="images/SkillCraft Logo.png" alt="SkillCraft Logo"
+                style="width:100%; height:100%; object-fit:contain;"
+                onerror="this.style.display='none'; this.parentNode.innerText='SC';">
+            </div>
+            <div class="exp-meta">
+              <div class="exp-institution">SkillCraft Technology</div>
+              <div class="exp-degree">UI/UX developer Internship</div>
+              <div class="exp-field">Remote</div>
+            </div>
+          </div>
+          <div class="exp-desc">
+            Contributed to designing intuitive and visually engaging user interfaces, enhancing user experience through
+            wireframes, prototypes, and design iterations. Collaborated with the development team to ensure seamless
+            integration of design into functional products, focusing on usability, accessibility, and brand consistency.
+          </div>
+          <div class="exp-actions" style="margin-top: 1.2rem;">
+            <a href="images/SC.PNG" target="_blank" class="btn-proj btn-proj-outline"
+              style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Certificate
+            </a>
+          </div>
+          <div class="exp-footer">
+            <div class="exp-period">Jul 2025 – Aug 2025 (2 mos)</div>
+            <span class="exp-status status-completed">Completed</span>
+          </div>
+        </div>
+
+        <!-- UI/UX DESIGN Apprenticeship -->
+        <div class="exp-card exc-2 reveal">
+          <div class="exp-header">
+            <div class="exp-logo exp-logo-2">
+              <img src="images/Z2 learn Logo.png" alt="Z2 learn Logo"
+                style="width:100%; height:100%; object-fit:contain;"
+                onerror="this.style.display='none'; this.parentNode.innerText='Z2';">
+            </div>
+            <div class="exp-meta">
+              <div class="exp-institution">Z2learn</div>
+              <div class="exp-degree">UI/UX DESIGN Apprenticeship</div>
+              <div class="exp-field">Kanyakumari, Tamil Nadu, India</div>
+            </div>
+          </div>
+          <div class="exp-desc">
+            UI/UX Design Trainee. Gained practical experience in real-world UX challenges.
+          </div>
+          <div class="exp-actions" style="margin-top: 1.2rem;">
+            <a href="images/Z2.png" target="_blank" class="btn-proj btn-proj-outline"
+              style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Certificate
+            </a>
+          </div>
+          <div class="exp-footer">
+            <div class="exp-period">Jun 2025 – Jul 2025 (2 mos)</div>
+            <span class="exp-status status-completed">Completed</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 5 — EDUCATION
+  ═══════════════════════════════════════ -->
+  <div class="edu-band" id="education">
+    <div class="section-wrap" style="padding-top:6rem;padding-bottom:6rem;">
+      <p class="section-label reveal">Academic Background</p>
+      <h2 class="section-title reveal">Education &<br><span class="muted">Qualifications</span></h2>
+      <p class="section-sub reveal">The academic foundation that shaped my creative and technical thinking.</p>
+
+      <div class="edu-grid">
+
+        <!-- Arunachala-->
+        <div class="edu-card ec-1">
+          <div class="edu-header">
+            <div class="edu-logo edu-logo-1">
+              <img src="images/Acew.png" alt="Arunachala ACEW Logo"
+                style="width:100%; height:100%; object-fit:contain;">
+            </div>
+            <div class="edu-meta">
+              <div class="edu-institution">Arunachala College of Engineering for Women</div>
+              <div class="edu-degree">MBA </div>
+              <div class="edu-field">Bussiness Analyst </div>
+            </div>
+          </div>
+          <div class="edu-footer">
+            <div class="edu-period">Aug 2026 – Present</div>
+            <span class="edu-status status-active">Pursuing</span>
+          </div>
+        </div>
+
+        <!-- St. Xavier's -->
+        <div class="edu-card ec-1">
+          <div class="edu-header">
+            <div class="edu-logo edu-logo-1">
+              <img src="images/Sxcce.png" alt="St. Xavier's SXCCE Logo"
+                style="width:100%; height:100%; object-fit:contain;">
+            </div>
+            <div class="edu-meta">
+              <div class="edu-institution">St. Xavier's Catholic College of Engineering (Autonomous), Chunkankadai</div>
+              <div class="edu-degree">Bachelor of Technology — BTech</div>
+              <div class="edu-field">Information Technology</div>
+            </div>
+          </div>
+          <div class="edu-footer">
+            <div class="edu-period">Nov 2022 – May 2026</div>
+            <span class="edu-status status-active">Completed</span>
+          </div>
+        </div>
+
+        <!-- Secondary placeholder card — add more if needed -->
+        <div class="edu-card ec-2">
+          <div class="edu-header">
+            <div class="edu-logo edu-logo-2">
+              <img src="images/Gsm.png" alt="Higher Secondary School Logo"
+                style="width:100%; height:100%; object-fit:contain;">
+            </div>
+            <div class="edu-meta">
+              <div class="edu-institution">Higher Secondary School</div>
+              <div class="edu-degree">Higher Secondary Certificate — HSC</div>
+              <div class="edu-field">Computer Science</div>
+            </div>
+          </div>
+          <div class="edu-footer">
+            <div class="edu-period">2020 – 2022</div>
+            <span class="edu-status status-completed">Completed</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 6 — CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="section-wrap">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's Build Something<br><span class="muted">Great Together</span></h2>
+    <p class="section-sub reveal">Have a project, opportunity, or just want to say hello? I'd love to hear from you.</p>
+
+    <div class="contact-wrap">
+
+      <!-- Left — contact info -->
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon ci-c">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">
+              <a href="mailto:shymasm2004@gmail.com">shymasm2004@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon ci-v">📞</div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">
+              <a href="tel:+919629640095">+91 9629640095</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon ci-a">🔗</div>
+          <div>
+            <div class="contact-item-label">Social Profiles</div>
+            <div class="contact-item-value">
+              <div class="social-row">
+                <a href="https://github.com/ShymaSM" target="_blank" class="social-btn" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shyma-s-m" target="_blank" class="social-btn" title="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#0077B5">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+                <a href="mailto:shymasm2004@gmail.com" class="social-btn" title="Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Availability note -->
+        <div class="avail-info-card">
+          <div class="avail-info-header">
+            <div class="avail-info-dot"></div>
+            <div class="avail-info-label">AVAILABLE FOR WORK</div>
+          </div>
+          <p class="avail-info-text">Open to full-time roles, freelance projects, and exciting collaborations in UI/UX
+            design and frontend development.</p>
+        </div>
+      </div>
+
+      <!-- Right — form -->
+      <div class="reveal">
+        <div class="contact-form-card">
+          <div class="form-card-title">Send a Message</div>
+          <p class="form-card-sub">I typically respond within 24 hours.</p>
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" placeholder="Tell me about your project, opportunity, or just say hi..."
+                required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22,2 15,22 11,13 2,9" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">✅</div>
+            <div class="form-success-title">Message Sent!</div>
+            <p class="form-success-sub">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="nav-logo" style="margin-bottom:.75rem;">
+            <span class="logo-s">S</span><span class="logo-m">M</span>
+            <span class="logo-sep">/</span>
+            <span class="logo-name">Shyma S M</span>
+          </div>
+          <p class="footer-brand-desc">UI/UX Designer, Graphic Design Executive &amp; Frontend Developer. Building
+            digital experiences that matter — one pixel at a time.</p>
+          <div class="social-row" style="margin-top:1.2rem;">
+            <a href="https://github.com/ShymaSM" target="_blank" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shyma-s-m" target="_blank" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#0077B5">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="mailto:shymasm2004@gmail.com" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#journey">My Journey</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Projects</div>
+          <ul class="footer-links">
+            <li><a href="#projects">Marhaba Event Mgmt</a></li>
+            <li><a href="#projects">Smart Uro Wellness</a></li>
+            <li><a href="https://github.com/ShymaSM" target="_blank">GitHub Profile ↗</a></li>
+            <li><a href="resume.pdf" download>Download Resume</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2024 Shyma S M. All rights reserved.</div>
+        <div class="footer-made">Designed &amp; Developed with <span class="heart">♥</span> by Shyma S M</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-top" id="backTop">↑</a>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
